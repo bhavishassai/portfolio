@@ -67,6 +67,7 @@ body {
 }
 
 .intro-text {
+  padding: 12px;
   font-size: 1.75em;
 }
 
@@ -197,8 +198,8 @@ body {
 }
 
 #contact-me img {
-  width: 46px;
-  height: 46px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   padding: 12px 32px;
   transition: transform .2s;
