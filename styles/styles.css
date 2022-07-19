@@ -1,0 +1,295 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+
+}
+
+.header {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header>strong {
+  margin: 12px 24px;
+  font-size: 1.15rem;
+
+}
+
+.action-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.action-container>a {
+  margin: 12px;
+  padding: 12px;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+
+.action-container>a:hover {
+  margin: 12px;
+  padding: 12;
+  font-weight: 400;
+  transform: scale(1.1);
+  transition: transform 0.1s;
+  text-decoration: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.intro-text {
+  font-size: 1.75em;
+}
+
+.intro-text p {
+  font-size: 16px;
+  font-style: normal;
+  color: rgb(29, 29, 29);
+}
+
+.intro-text .name {
+  background: linear-gradient(180deg, transparent 70%, yellow 60%);
+}
+
+.profile-image {
+  width: 248px;
+  height: 248px;
+  border-radius: 256px;
+  margin-bottom: 22px;
+  object-fit: cover;
+  border: 4px solid yellow;
+}
+
+#projects {
+  width: 100%;
+  background-color: white;
+}
+
+.projects-title {
+  padding: 32px;
+  font-size: 52px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.projects-title span {
+  background: linear-gradient(180deg, transparent 70%, yellow 60%);
+}
+
+.projects-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 64px;
+  flex-wrap: wrap;
+  padding: 92px 32px;
+
+}
+
+.project-card {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.project-card .image-catalog img {
+  padding: 12px 24px;
+  height: 74vh;
+  transition: transform .2s;
+
+}
+
+.project-card .image-catalog img:hover {
+  transform: scale(1.1);
+}
+
+.project-title {
+  margin-bottom: 48px;
+  font-size: 20px;
+}
+
+
+#about {
+  width: 100%;
+  background-color: white;
+}
+
+.about-title {
+  padding: 32px;
+  font-size: 52px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+}
+
+.about-title span {
+  background: linear-gradient(180deg, transparent 70%, yellow 60%);
+}
+
+.about-row {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  height: 100%;
+}
+
+.about-row p {
+  color: black;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 26px;
+  letter-spacing: 0.35px;
+  width: 80vw;
+}
+
+.contact-me-title {
+  padding: 32px;
+  font-size: 52px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.contact-me-title span {
+  background: linear-gradient(180deg, transparent 70%, yellow 60%);
+}
+
+#contact-me img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  padding: 12px 32px;
+  transition: transform .2s;
+
+}
+
+#contact-me img:hover {
+  transform: scale(1.1);
+}
+
+.contact-me-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+footer {
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.copyright {
+  padding: 24px;
+  color: white;
+}
+
+.hamburger {
+  visibility: hidden;
+}
+
+@media (max-width:640px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header>strong {
+    margin: 1rem 1rem 1rem 2rem;
+    font-size: 1.15rem;
+    color: black;
+  }
+
+  .action-container {
+    visibility: hidden;
+    background-color: #000;
+    height: 4rem;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-container>a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .action-container>a:hover {
+    font-weight: 400;
+    transform: scale(1.0);
+    text-decoration: none;
+  }
+
+  .hamburger {
+    padding: 20px;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .image-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+}
