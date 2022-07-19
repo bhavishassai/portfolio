@@ -68,7 +68,7 @@ body {
 
 .intro-text {
   padding: 12px;
-  font-size: 1.75em;
+  font-size: 1.675em;
 }
 
 .intro-text p {
@@ -82,9 +82,9 @@ body {
 }
 
 .profile-image {
-  width: 248px;
-  height: 248px;
-  border-radius: 256px;
+  width: 236px;
+  height: 236px;
+  border-radius: 236px;
   margin-bottom: 22px;
   object-fit: cover;
   border: 4px solid yellow;
