@@ -34,11 +34,13 @@ hamburger.addEventListener('click', () => {
 
 
 function closeNavWindow() {
+  if(window.innerWidth<=640){
   is_hamburger_open = false;
   header.style.backgroundColor = '#fff';
   header.childNodes[1].style.color = '#000';
   action_container.style.visibility = 'hidden';
   hamburger.childNodes[0].src='assets/icons/hamburger_black.svg';
+  }
 }
 about_btn.addEventListener('click',closeNavWindow); 
 blogs_btn.addEventListener('click',closeNavWindow);
