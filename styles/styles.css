@@ -105,9 +105,10 @@ body {
   align-self: center;
 }
 
+/* 
 .projects-title span {
-  background: linear-gradient(180deg, transparent 70%, yellow 60%);
-}
+   background: linear-gradient(180deg, transparent 70%, yellow 60%);
+} */
 
 .projects-row {
   display: flex;
@@ -162,9 +163,9 @@ body {
 
 }
 
-.about-title span {
+/* .about-title span {
   background: linear-gradient(180deg, transparent 70%, yellow 60%);
-}
+} */
 
 .about-row {
   display: flex;
@@ -193,9 +194,9 @@ body {
   align-self: center;
 }
 
-.contact-me-title span {
+/* .contact-me-title span {
   background: linear-gradient(180deg, transparent 70%, yellow 60%);
-}
+} */
 
 #contact-me img {
   width: 32px;
